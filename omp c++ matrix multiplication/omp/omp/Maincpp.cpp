@@ -49,11 +49,11 @@ int main()
 		}
 	}
 
-#pragma omp parallel for 
+	#pragma omp parallel for 
 	for (int i = 0; i < MATRIX_SIZE; i++) {
-#pragma omp critical
+		#pragma omp critical
 		cout << "Row index: " << i << "		Thread id: " << _threadid << endl;
-#pragma omp parallel
+	#pragma omp parallel
 		{
 			for (int j = 0; j < MATRIX_SIZE; j++) {
 				for (int k = 0; k < MATRIX_SIZE; k++) {
