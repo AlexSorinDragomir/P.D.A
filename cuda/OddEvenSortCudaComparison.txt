@@ -1,0 +1,21 @@
+In order to show the practical effects of the algorithm, I tested this using  3 different approaches: sequential implementation, multi thread implementation and CUDA implementation. 
+This were  executed on a machine with NVidia GPU. Technical
+features of the machine used for testing are Intel i3
+processor, 4 GB RAM and GeForce 820M with 2GB
+VRAM, set up under Windows 8.1 operating system.
+CUDA 7.0 paradigm and C++ is used for CUDA
+implementation.
+
+Test Cases: 
+
+Array size = 200
+CPU - sequential: 0.13s
+CPU – multi thread: 0.07s
+GPU: 0.19s
+
+
+Array size = 500
+
+CPU - sequential: 0.21s
+CPU – multi thread: 0.15s 
+GPU: 0.43s
